@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Paste Book</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <meta name="theme-color" content="white"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+        <link rel='icon' href='Favicon/favicon.ico' type='image/x-icon'>
+
+        <script src="/socket.io/socket.io.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="https://imagineeeinc.github.io/api/cdn/font/ibmplex/mono/font.css">
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <!--<link rel="manifest" href="manifest.json">-->
+    </head>
+    <body>
+        <div class="wrapper">
+            <div id="header">
+                <header>
+                    Paste Book
+                </header>
+                <div id="tabs">
+                    <span>Notes</span>
+                    <span>ToDo</span>
+                    <span>Links</span>
+                </div>
+            </div>
+            <div id="main">
+                <div class="sec">
+                    <div class="inputField">
+                        <input type="text" placeholder="Add your new todo">
+                        <button>+</button>
+                    </div>
+                    <ul class="todoList">
+                    </ul>
+                    <div class="footer">
+                        <button>Clear All</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "paste-book",
+  "version": "0.1.0",
+  "description": "save notes and links any where",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imagineeeinc/paste-book.git"
+  },
+  "keywords": [
+    "notes"
+  ],
+  "author": "imagineee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imagineeeinc/paste-book/issues"
+  },
+  "homepage": "https://github.com/imagineeeinc/paste-book#readme",
+  "dependencies": {
+    "env": "^0.0.2",
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0"
+  }
+}
