@@ -4,8 +4,31 @@ const addBtn = document.querySelector(".inputField button");
 const todoList = document.querySelector(".todoList");
 const deleteAllBtn = document.querySelector(".footer button");
 var opts = {}
+var tab = "notes"
+
+document.getElementById("tabs").onclick = function(event) {
+    if (event.path[0].className === "notes-btn") {
+        tab = "notes"
+    } else if (event.path[0].className === "todo-btn") {
+        tab = "todo"
+    } else if (event.path[0].className === "links-btn") {
+        tab = "links"
+    }
+    updateTab()
+}
+
+function updateTab() {
+    if (tab === "notes") {
+        document.getElementsByClassName("notes-btn").style.backgoundColor = "white"
+    } else if (tab === "todo") {
+        document.getElementsByClassName("todo-btn").style.backgound = "white"
+    } else if (tab === "links") {
+        document.getElementsByClassName("links-btn").style.backgound = "white"
+    }
+}
 
 window.onload = function() {
+    updateTab()
     let getLocalStorageData = localStorage.getItem("pastebook-opts");
     if(getLocalStorageData == null){
         setNew()

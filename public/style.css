@@ -49,9 +49,6 @@ body {
 #tabs > span:hover {
     color: black;
 }
-#tabs > span:first-child {
-    background: #fff;
-}
 #main {
     padding: 15px;
     background: #fff;
